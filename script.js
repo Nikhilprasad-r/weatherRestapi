@@ -48,7 +48,7 @@ function getWeather(lat, lon) {
     .then((data) => {
       // Display weather information
       alert(
-        `Current Weather: ${data.weather[0].main}, ${data.weather[0].description} and temperature is${Math.ceil(data.main.temp-273.15)} °C `
+        `Current Weather: ${data.weather[0].main}, ${data.weather[0].description} and temperature is ${Math.ceil(data.main.temp-273.15)} °C `
       );
     })
     .catch((error) => console.log("Error fetching weather data:", error));
